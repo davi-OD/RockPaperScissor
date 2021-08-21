@@ -131,3 +131,59 @@ body {
 .hands .hand:hover {
   transform: translate3d(0px, -8px, 8px);
 }
+
+.contest {
+  width: 900px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.contest .hand {
+  width: 225px;
+  height: 225px;
+}
+
+/*Picks the divs right under not those within the divs under*/
+.contest > div {
+  flex: 1;
+}
+
+.contest h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contest .handImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.referee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.referee h1 {
+  font-size: 45px;
+}
+
+.newGame {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: hsl(229, 25%, 31%);
+  transition: all 0.15s;
+  text-align: center;
+}
+
+.newGame:hover {
+  background-color: bisque;
+  transform: translate3d(0px, -2px, 0px);
+}
